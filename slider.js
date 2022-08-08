@@ -149,37 +149,11 @@ function createSlider(slides) {
     }
   }
 
-  // const arrowRight = document.querySelector(`.arrow`);
 
   // //WYSZUKANIE KROPEK i przypisywanie
   let firstDot = document.querySelector(`.kropka1`);
   console.log(firstDot);
-  // firstDot.classList.add(`active`);
-  // let secondDot = document.querySelector(`.kropka2`);
-  // console.log(secondDot);
-
-  // let thirdDot = document.querySelector(`.kropka3`);
-  // console.log(thirdDot);
-
-
-  
-  // function changeSlideByClick() {
-  //   if (active === slides.length) {
-  //     active = 0;
-
-  //   }
-  //   image.src = slides[active].img;
-  //   h1.textContent = slides[active].text;
-  //   changeDot()
-  // }
-
-
-  // //Zmiana kropek po kliknięciu - DO PRZEROBIENIA@@@@@@@@@@@@@!!!!!!!!!!!!!!
-  //nie chcemy tak 😃
-  // niech te dynamiczne kropki mają jakieś data albo id z indexem
-  // to wtedy to możesz 1 metodą opierdolić
-
-
+ 
 
   function changeSlideByClickOnDots() {
     // for (i = 0; i <= dots.length; i++) {
@@ -237,64 +211,4 @@ function createSlider(slides) {
   window.addEventListener(`keydown`, changeSlideByKeys);
 
 }
-
-
-
-
-
-
-
-//NA POTEM
-
- 
-  //wielkość czcionki
-  // let font = document.querySelector(`.fontSize`)
-  // let font = document.getElementsByClassName(`fontSize`);
-
-
-  // function changeFontSizeOne() {
-  //     // buttonOne.style.fontSize = `10px`;
-  //     console.log(`czcionka powiększona`);
-  //     font.style.color;
-  //     font.style.fontSize = `medium`;
-  //     contrast.style.fontSize = `medium`;
-  //     h1.style.fontSize = `40px`;
-  // }
-
-
-  // function changeFontSizeTwo() {
-  //     // buttonTwo.style.fontSize = `10px`;
-  //     console.log(`czcionka powiększona`);
-
-  //     font.style.fontSize = "x-large";
-  //     contrast.style.fontSize = "x-large";
-  //     h1.style.fontSize = "60px";
-  // }
-
-  // function changeFontSizeThree() {
-  //     // buttonThree.style.fontSize = `12px `;
-  //     console.log(`czcionka powiększona`);
-  //     font.style.fontSize = "xx-large";
-  //     contrast.style.fontSize = "xx-large";
-  //     h1.style.fontSize = "80px";
-  // }
-
-  // buttonTwo.addEventListener(`click`, changeFontSizeTwo);
-  // buttonThree.addEventListener(`click`, changeFontSizeThree);
-  // buttonOne.addEventListener(`click`, changeFontSizeOne);
-
-
-  // //zmiana kontrastu
-
-
-
-  // function changeContrast() {
-  //     font.style.color = `#FFFF33`;
-  //     h1.style.color = `#FFFF33`;
-
-  //     console.log(` kontrast zmieniony!`);
-
-  // }
-
-  // contrast.addEventListener(`click`, changeContrast);
 
