@@ -24,7 +24,6 @@ function createSlider(slides) {
             <header>
             <img class="slider" src="images/img1.jpg" alt="">
             <h1 class="slider">Pierwszy tekst</h1>
-        
             <div class="dots" id="spansConteiner">
               <div class="arrow"></div>
               <div class="arrowRight"></div>
@@ -42,10 +41,10 @@ function createSlider(slides) {
     addSpans();
   }
 
-    // //zmiana na tablice
+  //zamiana na tablice
   let dots = [];
 
-  // // Interfejs
+ // Interfejs
   const time = 3000;
   let active = 0;
   
@@ -54,7 +53,6 @@ function createSlider(slides) {
   function addSpans() {
     const spansConteiner = document.getElementById("spansConteiner");
     for (i = 1; i <= arrayLength; i++) {
-
       console.log(`ok`);
       const newSpan = document.createElement("span");
       newSpan.addEventListener(`click`, () => setActiveSlide(i));
@@ -62,19 +60,13 @@ function createSlider(slides) {
       spansConteiner.appendChild(newSpan);
       dots.push(newSpan);
       console.log(dots);
-      
     }
- 
   }
-
+  
   drawSlider();
 
   function setActiveSlide(index){
 
-//DO POPRAWY!!!!!!!!!
-   dots[index].classList.add(`active`);
-   dots[active].classList.add(`active`);
-   dots[activeDot].classList.remove(`active`);
 
   }
   
@@ -90,19 +82,12 @@ function createSlider(slides) {
 
  
 
-
-
-
-
-
-
   // // Implementacje
   const changeDot = () => {
     console.log(`zmiana kropki`);
     const activeDot = dots.findIndex(dot => dot.classList.contains(`active`));
     dots[active].classList.add(`active`);
     dots[activeDot].classList.remove(`active`);
-
   }
 
 
@@ -122,7 +107,6 @@ function createSlider(slides) {
     active--;
     if (active === slides.length) {
     }
-
     image.src = slides[active].img;
     h1.textContent = slides[active].text;
     changeDot()
@@ -141,7 +125,6 @@ function createSlider(slides) {
 
       if (active <= 0) {
         active = dots.length;
-        // active = 3;
       }
       console.log(active)
       changeSlideDown();
@@ -194,7 +177,6 @@ function createSlider(slides) {
 
     if (active <= 0) {
       active = dots.length;
-      // active = 3;
     }
     console.log(active)
     changeSlideDown();
@@ -203,11 +185,11 @@ function createSlider(slides) {
   }
 
 
-  // //strzałki
+//strzałki
   arrow.addEventListener(`click`, changeSlideByArrow)
   arrowRight.addEventListener(`click`, changeSlideByArrowRight)
 
-  // //strzałki
+//strzałki
   window.addEventListener(`keydown`, changeSlideByKeys);
 
 }
